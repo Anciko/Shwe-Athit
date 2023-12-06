@@ -1,0 +1,24 @@
+h2::after{
+    content: "";
+    display: block;
+    width: 5%;
+    height: 2px;
+    background-color: #ef3114;
+    margin: 12px auto;
+}
+
+.active {
+    color: red !important;
+}
+
+
+.grow {
+   
+    transition: all .9s ease-in-out;
+}
+
+.grow:hover {
+   
+    transform: scale3d(1.2, 1.2, 1);
+    
+}
