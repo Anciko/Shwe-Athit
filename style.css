@@ -1,4 +1,4 @@
-h2::after{
+h2::after {
     content: "";
     display: block;
     width: 5%;
@@ -13,12 +13,29 @@ h2::after{
 
 
 .grow {
-   
+
     transition: all .9s ease-in-out;
 }
 
 .grow:hover {
-   
+
     transform: scale3d(1.2, 1.2, 1);
-    
+
+}
+
+.form-control:focus {
+    border-color: black !important;
+    outline-color: black !important;
+}
+
+.text-theme {
+    color: red;
+}
+
+.card {
+    cursor: pointer;
+}
+
+.border-hover-effect:hover {
+    border-color: black !important;
 }
