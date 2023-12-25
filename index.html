@@ -18,33 +18,27 @@
 
     <!-- custom -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
 </head>
 
 <body>
     <!-- Header section start -->
-    <header class="mb-5 ">
+    <header>
         <!-- Navbar -->
-        <!-- Navbar -->
-        <nav data-mdb-navbar-init class=" navbar navbar-expand-lg navbar-light shadow-sm fixed-top bg-white">
-            <!-- Container wrapper -->
+        <nav class="navbar shadow navbar-expand-lg fixed-top navbar-scroll">
+            <!-- container wrapper -->
             <div class="container">
-                <!-- Navbar brand -->
-                <a class="navbar-brand mt-2 mt-lg-0" href="#">
-                    <h1 class="text-theme mb-0">LOGO</h1>
-                    <!-- <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp" height="15" alt="MDB Logo"
-              loading="lazy" /> -->
-                </a>
-                <!-- Toggle button -->
-                <button data-mdb-collapse-init class="navbar-toggler" type="button"
+                <a class="navbar-brand" href="index.html">Logo</a>
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-collapse-init
                     data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
-
                 <!-- Collapsible wrapper -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left links -->
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="nav-effect navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" href="#">Home</a>
                         </li>
@@ -70,40 +64,48 @@
                 </div>
                 <!-- Collapsible wrapper -->
             </div>
-            <!-- Container wrapper -->
         </nav>
         <!-- Navbar -->
-        <!-- Navbar -->
-    </header>
-    <!-- Header section end -->
 
-    <!-- Hero Banner Section start-->
-    <section class="hero-banner py-3 ">
-        <div class="container pt-5">
-            <div class="row row align-items-center">
-                <div class="col-lg-5 offset-lg-1 order-lg-1">
-                    <img src="images/hero.svg" class="img-fluid" alt="Web Development">
-                </div>
-                <div class="col-lg-6 ">
-                    <!-- <h1 class="mt-3">Web Designing & Development</h1> -->
-                    <p class="lead text-secondary ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                        voluptatibus iure magni mollitia minus ut ducimus, veniam reprehenderit doloremque qui libero
-                        rerum eaque doloribus veritatis necessitatibus laboriosam laborum aliquid error.</p>
-                    <a href="#" class="btn btn-danger btn-lg border">Discover Now</a>
+        <!--Section: Design Block-->
+        <section class="mt-md-0 mt-5">
+            <div id="intro" class="bg-image" style="
+              background-image: url('images/hero.jpg');
+              background-attachment: fixed;
+              height: 55vh;
+            ">
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+                    <div class="container d-flex justify-content-center align-items-center h-100">
+                        <div class="row align-items-center pt-3">
+                            <div class="col-8 mx-auto">
+                                <h5 class="banner-text text-center">
+                                    သွေးသစ်လောင်းတဲ့ မျိုးဆက် ကျယ်ပြန့်လာတဲ့အယူအဆ
+                                    တိုးတက်လာတဲ့နည်းပညာ ဆန်းသစ်တဲ့အရွေ့တွေနဲ့ ဟန်ချက်ညီ
+                                    ရွှေအမြုတေ မဂ္ဂဇင်းအယ်ဒီတာအဖွဲ့က
+                                    ရွှေအသစ် ဒစ်ဂျစ်တယ်မဂ္ဂဇင်း စာမျက်နှာကို စီစဉ်တင်ဆက်ပါတယ်။
+
+                                </h5>
+                                <!-- <div class="text-center pt-3">
+                                <a href="" class="btn mb-0 btn-danger">Discover now</a>
+                               </div> -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <!--Section: Design Block-->
+    </header>
 
-    <!-- Hero banner section end -->
+
+    <!-- Header section end -->
+
 
     <!-- Latest section -->
     <section class="latest container  py-5">
         <h2 class="text-center mb-5">‌ရွှေအသစ် ဒစ်ဂျစ်တယ် အမှတ် ၁၊ ဇန်နဝါရီ ၂၀၂၄</h2>
 
-        <div class="row justify-content-md-between justify-content-center" data-aos="zoom-in"
-        data-aos-duration="2000"
-        >
+        <div class="row justify-content-md-between justify-content-center" data-aos="zoom-in" data-aos-duration="2000">
             <div class="col-md-4 col-lg-3 mb-3 ">
                 <small class="badge badge-dark rounded-pill mb-2">ရွှေဝတ္ထု</small>
                 <div class="card" style="width: 100%;">
@@ -307,8 +309,7 @@
 
 
     <!-- Interview section start -->
-    <section class="interview container py-5" data-aos="fade-in"
-    data-aos-duration="2000">
+    <section class="interview container py-5" data-aos="fade-in" data-aos-duration="2000">
         <!-- <h2 class="text-center mb-4">Interviews</h2> -->
         <div class="row">
             <div class="col-md-6">
@@ -385,8 +386,7 @@
 
     <!-- Interview section emd -->
     <!-- new design section start -->
-    <section class="container py-5" data-aos="fade-out"
-    data-aos-duration="2000">
+    <section class="container py-5" data-aos="fade-out" data-aos-duration="2000">
         <div class="row">
             <div class="col-md-4  mb-3 ">
                 <small class="badge badge-dark rounded-pill mb-2">ရွှေဝတ္ထု</small>
@@ -536,8 +536,7 @@
     <!-- new design section end -->
 
     <!-- category 1 start -->
-    <section class="category1 container" data-aos="fade-out"
-    data-aos-duration="2000">
+    <section class="category1 container" data-aos="fade-out" data-aos-duration="2000">
         <div class="row">
             <div class="col-lg-6 col-md-12 mb-3 ">
                 <small class="badge badge-dark rounded-pill mb-2">စာအုပ်စင် ကဏ္ဍ </small>
@@ -611,8 +610,7 @@
     <!-- category 1 end -->
 
     <!-- two column section start -->
-    <section class="container py-5" data-aos="zoom-in"
-    data-aos-duration="2000">
+    <section class="container py-5" data-aos="zoom-in" data-aos-duration="2000">
         <div class="row justify-content-center">
             <div class="col-md-6  mb-3 ">
                 <small class="badge badge-dark rounded-pill mb-2">‌ရွှေချစ်သူမှ ရွှေချစ်သူသို့</small>
@@ -715,7 +713,8 @@
 
 
         <div class=" text-center">
-            <a href="book.html" class="  mt-3 btn btn-dark ">See All <i class="fa-solid fa-arrow-right fa-bounce ms-2"></i></a>
+            <a href="book.html" class="  mt-3 btn btn-dark ">See All <i
+                    class="fa-solid fa-arrow-right fa-bounce ms-2"></i></a>
         </div>
     </section>
     <!-- two column section end -->

@@ -1,28 +1,32 @@
-ul {
+*{
+    scroll-behavior: smooth;
+}
+.banner-text {
+    color: whitesmoke;
+    opacity: 0.9;
+}
+.nav-effect {
    
-    display: table;
+    /* display: table; */
    
     border-radius: 8px;
 
 }
-ul li {
+.nav-effect li {
     list-style: none;
     display: inline-block;
-  /* margin-left: 50px; */
 }
-ul li a {
-    font-family: arial;
-    color: #8BE3F3;
+.nav-effect li a {
+    
     text-decoration: none;
     position: relative;
-    /* padding: 15px 10px; */
-    font-size: 18px;
+    font-size: 16px;
     display: block;
 }
-ul li a + a {
+.nav-effect li a + a {
     margin-left: 16px;
 }
-ul li a::after {
+.nav-effect li a::after {
     content: '';
     position: absolute;
     left: 0px;
@@ -34,7 +38,7 @@ ul li a::after {
     transition: transform 0.7s ease;
     transform: scaleX(0);
 }
-ul a:hover::after {
+.nav-effect a:hover::after {
     transform-origin: bottom left;
     transform: scaleX(1);
 }
