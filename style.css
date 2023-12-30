@@ -1,31 +1,37 @@
-*{
+* {
     scroll-behavior: smooth;
 }
+
 .banner-text {
     color: whitesmoke;
     opacity: 0.9;
 }
+
 .nav-effect {
-   
+
     /* display: table; */
-   
+
     border-radius: 8px;
 
 }
+
 .nav-effect li {
     list-style: none;
     display: inline-block;
 }
+
 .nav-effect li a {
-    
+
     text-decoration: none;
     position: relative;
     font-size: 16px;
     display: block;
 }
-.nav-effect li a + a {
+
+.nav-effect li a+a {
     margin-left: 16px;
 }
+
 .nav-effect li a::after {
     content: '';
     position: absolute;
@@ -38,6 +44,7 @@
     transition: transform 0.7s ease;
     transform: scaleX(0);
 }
+
 .nav-effect a:hover::after {
     transform-origin: bottom left;
     transform: scaleX(1);
@@ -79,13 +86,33 @@ h2::after {
 .text-theme {
     color: red;
 }
-
+/* 
 .card {
     cursor: pointer;
-}
+} */
 
 .border-hover-effect:hover {
     border-color: black !important;
 }
 
 
+/*  */
+.btn-theme {
+    background-color: red;
+    color: white;
+}
+
+.btn-theme:hover {
+    background-color: red !important;
+    color: white !important;
+}
+
+
+/* media queries */
+@media only screen and (max-width: 500px) {
+    .banner-text {
+        font-size: 13.5px;
+        line-height: 20px;
+        padding-top: 20px;
+    }
+}
