@@ -13,22 +13,26 @@
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.min.css" rel="stylesheet" />
 
-    <!-- <link rel="stylesheet" href="category.css"> -->
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- custom -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-light">
     <!-- Header section start -->
-    <header class="mb-5 ">
+    <header class="mb-5">
         <!-- Navbar -->
         <!-- Navbar -->
-        <nav data-mdb-navbar-init class=" navbar  navbar-expand-lg navbar-light shadow-sm fixed-top bg-white ">
+        <nav data-mdb-navbar-init class=" navbar navbar-expand-lg navbar-light shadow-sm fixed-top bg-white">
             <!-- Container wrapper -->
             <div class="container">
                 <!-- Navbar brand -->
                 <a class="navbar-brand mt-2 mt-lg-0" href="#">
-                    <!-- <h1 class="text-theme mb-0">LOGO</h1> -->
-                    <img src="images/SHWE Athit Logo.jpg" class="img-fluid" width="80" alt="">
+                    <h1 class="text-theme mb-0">LOGO</h1>
+                    <!-- <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp" height="15" alt="MDB Logo"
+              loading="lazy" /> -->
                 </a>
                 <!-- Toggle button -->
                 <button data-mdb-collapse-init class="navbar-toggler" type="button"
@@ -45,11 +49,12 @@
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
 
+
                         <li class="nav-item">
                             <a class="nav-link active" href="book.html">Books</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="categories.html">Categories</a>
+                            <a class="nav-link" href="categories.html">Categories</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="interview.html">Interviews</a>
@@ -71,267 +76,253 @@
         <!-- Navbar -->
     </header>
     <!-- Header section end -->
+
+    <!-- Hero Banner Section start-->
     <section class="pt-4">
         <div class="mb-4">
             <div class="bg-image shadow-1-strong rounded">
-              <img src="https://mdbootstrap.com/img/new/standard/city/053.jpg" class="w-100 object-cover" height="250" alt="Sample">
-              <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
-                <div class="d-flex justify-content-center align-items-center h-100">
-                    <div class="col-md-6 col-11 text-center">
-                        
-                        <h4 class="text-white" style="color: whitesmoke; opacity: 0.9;">Books</h4>
-                    <!-- <div class="input-group  py-3">
-                        <input type="text" class="form-control py-4" placeholder="Search articles by name or author..."
-                            autofocus />
-                          
-                    </div> -->
-  <!-- <button class="btn btn-theme rounded-end-3 " type="button">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                        </button> -->
+                <img src="https://mdbootstrap.com/img/new/standard/city/053.jpg" class="w-100 object-cover" height="250"
+                    alt="Sample">
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+                    <div class="d-flex justify-content-center align-items-center h-100">
+                        <h4 class="text-white mb-0">Books</h4>
+                    </div>
                 </div>
-                </div>
-              </div>
             </div>
-          </div>
+        </div>
     </section>
-   
+    <!-- Hero banner section end -->
 
-    <section class="container py-4">
-       <div class="col-md-8 mx-auto ">
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Search Books..." autofocus aria-label="Text input with dropdown button" />
-            <button class="btn btn-dark " type="button" data-mdb-dropdown-init data-mdb-ripple-init aria-expanded="false">
-              <i class="fa fa-search"></i>
-            </button>
-          </div>
-       </div>
-       
-       <div class="row mt-5 justify-content-md-between justify-content-center" data-aos="zoom-in" data-aos-duration="2000">
-        <div class="col-md-4 col-lg-3 mb-3 ">
-            <small class="text-dark fw-bold  py-3">ရွှေဝတ္ထု</small>
-            <div class="card" style="width: 100%;">
-                <a href="bookdetail.html">
-                    <img src="images/I want to kill spain guy 2.jpg" class="card-img-top "
-                        style="height: 10rem !important; object-fit: cover;" alt="...">
-                </a>
-                <div class="card-body">
+
+    <section class="container">
+        <div class="row">
+            <div class="col-md-12 mb-3">
+                <!-- <small class="badge badge-dark rounded-pill mb-2">စာအုပ်စင် ကဏ္ဍ </small> -->
+                <div class="card mb-3">
+                    <div class="row  g-0">
+                        <div class="col-md-5 p-1 align-self-center">
+                            <a href="">
+                                <img src="images/I want to kill spain guy 2.jpg" class="img-fluid rounded-start"
+                                    style="height: 20rem !important;width: 100%; object-fit: cover;" alt="...">
+                            </a>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <a href="">
+                                    <h4 class="text-dark card-title">စပိန်ကောင်ကိုသတ်ချင်တယ်</h4>
+                                </a>
+                                <i class="text-muted"><i class="fa-regular fa-user me-2"></i>ချောအိမာန်၊ မန္တလေး</i>
+                                <p class="card-text mt-2">
+                                    ဖြူဖြူဝတ်စုံနဲ့ လူတွေရော ဆင်းလာကြပြီး ဘေးနားမှာလည်း လူတွေ
+                                    က ရုံးစုရုံးစု ကင်မရာတွေ တကိုင်ကိုင်နဲ့ သတင်းထောက်တွေလည်း
+                                    တပုံကြီး။ အိမ်ခန်းထဲမှာ တောင်ပြေးရမလိုလို မြောက်ပြေးရမလိုလို
+                                    နေစရာ၊ ပုန်းစရာမရှိ။ ဒီသတင်းကြားမကြာခင် လိုင်းပေါ်ရောက်လာ
+                                    တော့မယ် ။ အာလုံး အံ့သြသွားကြမယ်။ ခုကို ကျွန်မနေတဲ့ အိမ်
+                                    လိပ်စာ၊ ရပ်ကွက်နာမည် လိုင်းပေါ် ပလူပျံနေလောက်ပြီ။
+                                    ကျွန်မပုံကြီးသာလိုင်းပေါ်တက်သွားရင် အမေလေးမတွေးရဲစရာ။...
+                                </p>
+                                <p class="card-text">
+                                    <small class="text-muted "><i class="fa-regular fa-calendar-days me-2"></i>28
+                                        September
+                                        2023</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4  mb-3 ">
+                <!-- <small class="text-dark fw-bold  py-3">ရွှေဝတ္ထု</small> -->
+                <div class="card" style="width: 100%;">
                     <a href="bookdetail.html">
-                        <h4 class="text-dark">စပိန်ကောင်ကိုသတ်ချင်တယ်</h4>
+                        <img src="images/Short story.jpg" class="card-img-top "
+                            style="height: 10rem !important; object-fit: cover;" alt="...">
                     </a>
-                    <i class="text-muted"><i class="fa-regular fa-user me-2"></i>ချောအိမာန်၊ မန္တလေး</i>
-                    <p class="card-text mt-3">
-                        တုန်ယင်နေတဲ့ လက်တွေက
-                        ချွေးစေးတွေပြန်လာတယ်။ ဖွင့်
-                        ပေးရမလား၊ မဖွင့်ဘူးလား။
-                        ပြတင်းပေါက်ကနေ ခုန်ချပြီး
-                        နောက်ဖေးပေါက်ကနေ...
-                    </p>
+                    <div class="card-body">
+                        <a href="bookdetail.html">
+                            <h4 class="text-dark">လခြမ်းလှေကို ယီးလေလေ့ခို
+                            </h4>
+                        </a>
+                        <i class="text-muted"><i class="fa-regular fa-user me-2"></i>မင်းဝေဟင်</i>
+                        <p class="card-text mt-3">
+                            လရောင်တစ်စိုးတစ်စိမျှ မရှိသည့် ည
+                            သည်အေးစက် တိတ်ဆိတ်နေသည်။ ခပ်
+                            လှမ်းလှမ်းသို့ အကြည့်စူးစူးတို့ ပိုလွှတ်
+                            ကြည့်သောငြား အမှောင်သို့ စိုက်ကြည့်
+                            မိတဲ့အကြည့်တို့သည် အမှောင်ထဲတွင်
+                            လျင်လျင်မြန်မြန် ဝင်ရောက်ပျောက်ကွယ်
+                            သွားပြန်သည်...
+                        </p>
+                    </div>
                 </div>
+
             </div>
 
-        </div>
-
-
-        <div class="col-md-4  col-lg-3 mb-3 ">
-            <small class="text-dark fw-bold rounded-pill mb-3">ရွှေဝတ္ထုရှည် စ/ဆုံး</small>
-            <div class="card" style="width: 100%;">
-                <a href="">
-                    <img src="images/2.Long Novel.jpg" class="card-img-top "
-                        style="height: 10rem !important; object-fit: cover;" alt="...">
-                </a>
-                <div class="card-body">
-                    <a href="">
-                        <h4 class="text-dark">ကျောင်းတော်သားမို့ ရဲသကို
-                        </h4>
-                    </a>
-                    <i class="text-muted"><i class="fa-regular fa-user me-2"></i>ချောအိမာန်၊ မန္တလေး</i>
-                    <p class="card-text mt-3">
-                        ပဋိင်္သခါ ယောနိ သော၊ ပိဏ္ဍ ပါ
-                        တံ ပဋိသေဝါမိ၊ နေဝ ဒဝါယ န မ
-                        ဒါယ၊ နမဏ္ဍနယ နဝိဘူသနာယ၊
-                        ယာဝဒေဝ ဣမဿ၊ ကာယဿ ဌိ
-                        တိယာ၊ ယာပနာယ ဝိဟိံ ...
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-
-        <div class="col-md-4 col-lg-3  mb-3 ">
-            <small class="text-dark fw-bold rounded-pill mb-3"> ရွှေဝတ္ထုများကို ပြန်လည်
-            </small>
-            <div class="card" style="width: 100%;">
-                <a href="">
-                    <img src="images/3.Redigging.jpg" class="card-img-top "
-                        style="height: 10rem !important; object-fit: cover;" alt="...">
-                </a>
-                <div class="card-body">
-                    <a href="">
-                        <h4 class="text-dark">မိစံ</h4>
-                    </a>
-                    <i class="text-muted"><i class="fa-regular fa-user me-2"></i>မောင်နေမျိုး</i>
-                    <p class="card-text mt-3">
-                        အိပ်ယာကနိုးလာတော့ ဒေါက်တာ
-                        ငွေခင်သူမအား ပြုံးပြုံးကြီး ကြည့်
-                        နေသည်။ သူမကိုယ်တိုင်တွင်လည်း
-                        အင်္ကျီကြယ်သီး ပြုတ်နေသည်...
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-md-4 col-lg-3 mb-3 ">
-            <small class="text-dark fw-bold rounded-pill mb-3">ရွှေအသစ်</small>
-            <div class="card" style="width: 100%;">
-                <a href="">
-                    <img src="images/4.Shwe Athit.jpg" class="card-img-top "
-                        style="height: 10rem !important; object-fit: cover;" alt="...">
-                </a>
-                <div class="card-body">
-                    <a href="">
-                        <h4 class="text-dark">အသိုက်ပျောက်တဲ့ငှက်</h4>
-                    </a>
-                    <i class="text-muted"><i class="fa-regular fa-user me-2"></i>‌နေအေး၊ ဆေးတက္ကသိုလ်
-                    </i>
-                    <p class="card-text mt-3">
-                        တကယ်ဆို အဖြစ်အပျက်တွေက
-                        အိပ်မက်ဖြစ်နေရင်အကောင်းသား
-                        အိပ်ရာက နိုးသွားရင် ပျောက်ကွယ်
-                        သွားမှာပဲ။ အခုတော့အိပ်မက်ဆိုးလို
-                        တစ်ဘဝလုံးအတွက် မေ့ဖျောက်...
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-
-        <div class="col-md-4 col-lg-3 mb-3 ">
-            <small class="text-dark fw-bold  py-3">ရွှေဝတ္ထု</small>
-            <div class="card" style="width: 100%;">
-                <a href="bookdetail.html">
-                    <img src="images/I want to kill spain guy 2.jpg" class="card-img-top "
-                        style="height: 10rem !important; object-fit: cover;" alt="...">
-                </a>
-                <div class="card-body">
+            <div class="col-md-4  mb-3 ">
+                <!-- <small class="text-dark fw-bold  py-3">ရွှေဝတ္ထု</small> -->
+                <div class="card" style="width: 100%;">
                     <a href="bookdetail.html">
-                        <h4 class="text-dark">စပိန်ကောင်ကိုသတ်ချင်တယ်</h4>
+                        <img src="images/Short story Nan.jpg" class="card-img-top "
+                            style="height: 10rem !important; object-fit: cover;" alt="...">
                     </a>
-                    <i class="text-muted"><i class="fa-regular fa-user me-2"></i>ချောအိမာန်၊ မန္တလေး</i>
-                    <p class="card-text mt-3">
-                        တုန်ယင်နေတဲ့ လက်တွေက
-                        ချွေးစေးတွေပြန်လာတယ်။ ဖွင့်
-                        ပေးရမလား၊ မဖွင့်ဘူးလား။
-                        ပြတင်းပေါက်ကနေ ခုန်ချပြီး
-                        နောက်ဖေးပေါက်ကနေ...
-                    </p>
+                    <div class="card-body">
+                        <a href="bookdetail.html">
+                            <h4 class="text-dark">‌ဖေဖေနောက်တစ်ခါပြန်ငယ်သွားတဲ့အခါ</h4>
+                        </a>
+                        <i class="text-muted"><i class="fa-regular fa-user me-2"></i>နန်းဧကရီရှင်
+                        </i>
+                        <p class="card-text mt-3">
+                            အိမ်ရှိရာမြို့စွန် ရပ်ကွက်ထဲ ရောက်တယ်ဆို
+                            လျှင်ပဲ အမှောင်ရိပ်သန်းစပြုပြီး ခပ်မှိန်မှိန်ရှီ
+                            သောလမ်းမီးတိုင် ဝါကြင့်ကြင့်တို့လည်း လင်းစ
+                            ပြုပြီး ကျောက်ခဲတို့ဖြင့် မညီမညာဖြစ်နေသည့်
+                            လမ်းတစ်လျှောက် လူသံတို့ဖြင့် ဆူညံနေ၏...
+                        </p>
+                    </div>
                 </div>
+
+            </div>
+
+            <div class="col-md-4  mb-3 ">
+                <!-- <small class="text-dark fw-bold  py-3">ရွှေဝတ္ထု</small> -->
+                <div class="card" style="width: 100%;">
+                    <a href="bookdetail.html">
+                        <img src="images/Short story Ye Yint.jpg" class="card-img-top "
+                            style="height: 10rem !important; object-fit: cover;" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <a href="bookdetail.html">
+                            <h4 class="text-dark">သေဆုံးရသည့်ကြောင်းရင်း</h4>
+                        </a>
+                        <i class="text-muted"><i class="fa-regular fa-user me-2"></i>ရဲရင့်လုံ၊ ဆေးမန်း၊</i>
+                        <p class="card-text mt-3">
+                            ရင်ပတ်ထဲ သောကအပူမီးတွေ
+                            လောင်မြိုက်နေတဲ့ကြားက ထိတ်ခနဲ ဖြစ်
+                            သွားမိတယ်။ အလုပ်သမားခေါင်း ဘကြီး
+                            မိုးက ညိုရီကို တထောင်နဲ့မသိမသာတွက်
+                            ပြီး တိုးတိုးတိတ်တိတ်ပြောတယ်။ ကြည့်
+                            ကျက်ပြောကြသေးတာ ပေါ့တဲ့။ အစ္
+                            ကတော့ ညိုရီလည်း ပေးရကောင်းမှန်း...
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4  mb-3 ">
+                <small class="text-dark fw-bold  py-3">ရွှေဝတ္ထု</small>
+                <div class="card" style="width: 100%;">
+                    <a href="bookdetail.html">
+                        <img src="images/I want to kill spain guy 2.jpg" class="card-img-top "
+                            style="height: 10rem !important; object-fit: cover;" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <a href="bookdetail.html">
+                            <h4 class="text-dark">စပိန်ကောင်ကိုသတ်ချင်တယ်</h4>
+                        </a>
+                        <i class="text-muted"><i class="fa-regular fa-user me-2"></i>ချောအိမာန်၊ မန္တလေး</i>
+                        <p class="card-text mt-3">
+                            တုန်ယင်နေတဲ့ လက်တွေက
+                            ချွေးစေးတွေပြန်လာတယ်။ ဖွင့်
+                            ပေးရမလား၊ မဖွင့်ဘူးလား။
+                            ပြတင်းပေါက်ကနေ ခုန်ချပြီး
+                            နောက်ဖေးပေါက်ကနေ...
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4  mb-3 ">
+                <small class="text-dark fw-bold  py-3">ရွှေဝတ္ထု</small>
+                <div class="card" style="width: 100%;">
+                    <a href="bookdetail.html">
+                        <img src="images/I want to kill spain guy 2.jpg" class="card-img-top "
+                            style="height: 10rem !important; object-fit: cover;" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <a href="bookdetail.html">
+                            <h4 class="text-dark">စပိန်ကောင်ကိုသတ်ချင်တယ်</h4>
+                        </a>
+                        <i class="text-muted"><i class="fa-regular fa-user me-2"></i>ချောအိမာန်၊ မန္တလေး</i>
+                        <p class="card-text mt-3">
+                            တုန်ယင်နေတဲ့ လက်တွေက
+                            ချွေးစေးတွေပြန်လာတယ်။ ဖွင့်
+                            ပေးရမလား၊ မဖွင့်ဘူးလား။
+                            ပြတင်းပေါက်ကနေ ခုန်ချပြီး
+                            နောက်ဖေးပေါက်ကနေ...
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4  mb-3 ">
+                <small class="text-dark fw-bold  py-3">ရွှေဝတ္ထု</small>
+                <div class="card" style="width: 100%;">
+                    <a href="bookdetail.html">
+                        <img src="images/I want to kill spain guy 2.jpg" class="card-img-top "
+                            style="height: 10rem !important; object-fit: cover;" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <a href="bookdetail.html">
+                            <h4 class="text-dark">စပိန်ကောင်ကိုသတ်ချင်တယ်</h4>
+                        </a>
+                        <i class="text-muted"><i class="fa-regular fa-user me-2"></i>ချောအိမာန်၊ မန္တလေး</i>
+                        <p class="card-text mt-3">
+                            တုန်ယင်နေတဲ့ လက်တွေက
+                            ချွေးစေးတွေပြန်လာတယ်။ ဖွင့်
+                            ပေးရမလား၊ မဖွင့်ဘူးလား။
+                            ပြတင်းပေါက်ကနေ ခုန်ချပြီး
+                            နောက်ဖေးပေါက်ကနေ...
+                        </p>
+                    </div>
+                </div>
+
             </div>
 
         </div>
-
-
-        <div class="col-md-4  col-lg-3 mb-3 ">
-            <small class="text-dark fw-bold rounded-pill mb-3">ရွှေဝတ္ထုရှည် စ/ဆုံး</small>
-            <div class="card" style="width: 100%;">
-                <a href="">
-                    <img src="images/2.Long Novel.jpg" class="card-img-top "
-                        style="height: 10rem !important; object-fit: cover;" alt="...">
-                </a>
-                <div class="card-body">
-                    <a href="">
-                        <h4 class="text-dark">ကျောင်းတော်သားမို့ ရဲသကို
-                        </h4>
-                    </a>
-                    <i class="text-muted"><i class="fa-regular fa-user me-2"></i>ချောအိမာန်၊ မန္တလေး</i>
-                    <p class="card-text mt-3">
-                        ပဋိင်္သခါ ယောနိ သော၊ ပိဏ္ဍ ပါ
-                        တံ ပဋိသေဝါမိ၊ နေဝ ဒဝါယ န မ
-                        ဒါယ၊ နမဏ္ဍနယ နဝိဘူသနာယ၊
-                        ယာဝဒေဝ ဣမဿ၊ ကာယဿ ဌိ
-                        တိယာ၊ ယာပနာယ ဝိဟိံ ...
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-
-        <div class="col-md-4 col-lg-3  mb-3 ">
-            <small class="text-dark fw-bold rounded-pill mb-3"> ရွှေဝတ္ထုများကို ပြန်လည်
-            </small>
-            <div class="card" style="width: 100%;">
-                <a href="">
-                    <img src="images/3.Redigging.jpg" class="card-img-top "
-                        style="height: 10rem !important; object-fit: cover;" alt="...">
-                </a>
-                <div class="card-body">
-                    <a href="">
-                        <h4 class="text-dark">မိစံ</h4>
-                    </a>
-                    <i class="text-muted"><i class="fa-regular fa-user me-2"></i>မောင်နေမျိုး</i>
-                    <p class="card-text mt-3">
-                        အိပ်ယာကနိုးလာတော့ ဒေါက်တာ
-                        ငွေခင်သူမအား ပြုံးပြုံးကြီး ကြည့်
-                        နေသည်။ သူမကိုယ်တိုင်တွင်လည်း
-                        အင်္ကျီကြယ်သီး ပြုတ်နေသည်...
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-md-4 col-lg-3 mb-3 ">
-            <small class="text-dark fw-bold rounded-pill mb-3">ရွှေအသစ်</small>
-            <div class="card" style="width: 100%;">
-                <a href="">
-                    <img src="images/4.Shwe Athit.jpg" class="card-img-top "
-                        style="height: 10rem !important; object-fit: cover;" alt="...">
-                </a>
-                <div class="card-body">
-                    <a href="">
-                        <h4 class="text-dark">အသိုက်ပျောက်တဲ့ငှက်</h4>
-                    </a>
-                    <i class="text-muted"><i class="fa-regular fa-user me-2"></i>‌နေအေး၊ ဆေးတက္ကသိုလ်
-                    </i>
-                    <p class="card-text mt-3">
-                        တကယ်ဆို အဖြစ်အပျက်တွေက
-                        အိပ်မက်ဖြစ်နေရင်အကောင်းသား
-                        အိပ်ရာက နိုးသွားရင် ပျောက်ကွယ်
-                        သွားမှာပဲ။ အခုတော့အိပ်မက်ဆိုးလို
-                        တစ်ဘဝလုံးအတွက် မေ့ဖျောက်...
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
     </section>
+
 
     <div class="d-flex justify-content-center">
         <nav class="">
             <ul class="pagination pagination-circle">
-              <li class="page-item">
-                <a class="page-link">Previous</a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item active" aria-current="page">
-                <a class="page-link" href="#">2 <span class="visually-hidden">(current)</span></a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#">Next</a>
-              </li>
+                <li class="page-item">
+                    <a class="page-link">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="#">2 <span class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
             </ul>
-          </nav>
-       </div>
+        </nav>
+    </div>
+
+
+
+
+
+
+
 
     <!-- MDB -->
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.umd.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

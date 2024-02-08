@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <!-- Google Fonts -->
@@ -12,21 +13,24 @@
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.min.css" rel="stylesheet" />
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- custom -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-light">
     <!-- Header section start -->
-    <header class="mb-5 ">
+    <header class="mb-5">
         <!-- Navbar -->
         <!-- Navbar -->
-        <nav data-mdb-navbar-init class=" navbar  navbar-expand-lg navbar-light shadow-sm fixed-top bg-white ">
+        <nav data-mdb-navbar-init class=" navbar navbar-expand-lg navbar-light shadow-sm fixed-top bg-white">
             <!-- Container wrapper -->
             <div class="container">
                 <!-- Navbar brand -->
                 <a class="navbar-brand mt-2 mt-lg-0" href="#">
-                    <img src="images/SHWE Athit Logo.jpg" class="img-fluid" width="80" alt="">
+                    <h1 class="text-theme mb-0">LOGO</h1>
                     <!-- <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp" height="15" alt="MDB Logo"
               loading="lazy" /> -->
                 </a>
@@ -46,12 +50,11 @@
                         </li>
 
 
-
                         <li class="nav-item">
-                            <a class="nav-link" href="book.html">Books</a>
+                            <a class="nav-link " href="book.html">Books</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="categories.html">Categories</a>
+                            <a class="nav-link" href="categories.html">Categories</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="interview.html">Interviews</a>
@@ -61,6 +64,10 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about-us.html">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">Search</a>
                         </li>
                     </ul>
                     <!-- Left links -->
@@ -74,7 +81,7 @@
     </header>
     <!-- Header section end -->
 
-    <!-- Category banner section start -->
+    <!-- Hero Banner Section start-->
     <section class="pt-4">
         <div class="mb-4">
             <div class="bg-image shadow-1-strong rounded">
@@ -82,205 +89,248 @@
                     alt="Sample">
                 <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
                     <div class="d-flex justify-content-center align-items-center h-100">
-                        <div class="col-md-6 col-11 text-center">
-
-                            <h4 class="text-white" style="color: whitesmoke; opacity: 0.9;">Interviews</h4>
-                            <!-- <div class="input-group  py-3">
-                        <input type="text" class="form-control py-4" placeholder="Search interviews"
-                            autofocus />
-                            
-                    </div> -->
-
-                        </div>
+                        <h4 class="text-white mb-0">Interviews</h4>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Category banner section end -->
-    <!-- Categories section start -->
-
-    <!-- Latest section -->
-    <section class="interview container py-5">
-        <div class="col-md-8 mx-auto ">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Search Interviews..." autofocus
-                    aria-label="Text input with dropdown button" />
-                <button class="btn btn-dark " type="button" data-mdb-dropdown-init data-mdb-ripple-init
-                    aria-expanded="false">
-                    <i class="fa fa-search"></i>
-                </button>
-            </div>
-        </div>
-       
-        <div class="row mt-5">
-            <div class="col-md-6">
-                
-                <div class="ratio ratio-16x9">
-                    <!-- https://www.youtube.com/watch?v=cRHHrfP2RHk -->
-                    <iframe width="695" height="391" src="https://www.youtube.com/embed/SBtSv8fFAp0"
-                        title="ဆရာပန်းချီဝင်းတင့်နှင့် စကားပြောခြင်း" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-
-                </div>
-
-                <div class="py-2">
-                    <a href="" class="text-dark">
-                        <h4>ဆရာပန်းချီဝင်းတင့်နှင့် တွေ့ဆုံခြင်း</h4>
-                    </a>
-                    <p class="mb-1">တောင်းတွင်းကြီး
-                        မြို့စာကြည့်တိုက်အတွက်The
-                        Art of forest လို့အမည်ပေးထား......</p>
-                    <small class="text-muted"><i class="fa-regular fa-calendar-days me-2"></i>28 September
-                        2023</small>
-                </div>
-            </div>
+    <!-- Hero banner section end -->
 
 
-            <div class="col-md-6">
-                
-                <div class="ratio ratio-16x9">
-                    <!-- https://www.youtube.com/watch?v=cRHHrfP2RHk -->
-                    <iframe width="695" height="391" src="https://www.youtube.com/embed/SBtSv8fFAp0"
-                        title="ဆရာပန်းချီဝင်းတင့်နှင့် စကားပြောခြင်း" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-12 mb-3">
+                <!-- <small class="badge badge-dark rounded-pill mb-2">စာအုပ်စင် ကဏ္ဍ </small> -->
+                <div class="card p-2 mb-3">
+                    <div class="row g-4">
+                        <div class="col-md-5">
+                            <div class="ratio ratio-16x9">
+                                <!-- https://www.youtube.com/watch?v=cRHHrfP2RHk -->
+                                <iframe width="695" height="391" src="https://www.youtube.com/embed/SBtSv8fFAp0"
+                                    title="ဆရာပန်းချီဝင်းတင့်နှင့် စကားပြောခြင်း" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
 
-                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="py-2">
+                                <a href="" class="text-dark">
+                                    <h4>ဆရာပန်းချီဝင်းတင့်နှင့် တွေ့ဆုံခြင်း</h4>
+                                </a>
+                                <p class="mb-1">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum non laboriosam
+                                    itaque aliquam delectus corrupti vitae ipsum aliquid. Repellat, porro? Perspiciatis
+                                    id quas, et praesentium deleniti ducimus natus saepe nemo?
+                                </p>
+                                <small class="text-muted"><i class="fa-regular fa-calendar-days me-2"></i>28 September
+                                    2023</small>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="py-2">
-                    <a href="" class="text-dark">
-                        <h4>ဆရာပန်းချီဝင်းတင့်နှင့် တွေ့ဆုံခြင်း</h4>
-                    </a>
-                    <p class="mb-1">တောင်းတွင်းကြီး
-                        မြို့စာကြည့်တိုက်အတွက်The
-                        Art of forest လို့အမည်ပေးထား......</p>
-                    <small class="text-muted"><i class="fa-regular fa-calendar-days me-2"></i>28 September
-                        2023</small>
-                </div>
-            </div>
 
-            <div class="col-md-6">
-                
-                <div class="ratio ratio-16x9">
-                    <!-- https://www.youtube.com/watch?v=cRHHrfP2RHk -->
-                    <iframe width="695" height="391" src="https://www.youtube.com/embed/SBtSv8fFAp0"
-                        title="ဆရာပန်းချီဝင်းတင့်နှင့် စကားပြောခြင်း" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
 
-                </div>
-
-                <div class="py-2">
-                    <a href="" class="text-dark">
-                        <h4>ဆရာပန်းချီဝင်းတင့်နှင့် တွေ့ဆုံခြင်း</h4>
-                    </a>
-                    <p class="mb-1">တောင်းတွင်းကြီး
-                        မြို့စာကြည့်တိုက်အတွက်The
-                        Art of forest လို့အမည်ပေးထား......</p>
-                    <small class="text-muted"><i class="fa-regular fa-calendar-days me-2"></i>28 September
-                        2023</small>
                 </div>
             </div>
 
 
-            <div class="col-md-6">
-                
-                <div class="ratio ratio-16x9">
-                    <!-- https://www.youtube.com/watch?v=cRHHrfP2RHk -->
-                    <iframe width="695" height="391" src="https://www.youtube.com/embed/SBtSv8fFAp0"
-                        title="ဆရာပန်းချီဝင်းတင့်နှင့် စကားပြောခြင်း" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-
+            <div class="col-md-4  mb-3 ">
+                <!-- <small class="text-dark fw-bold  py-3">ရွှေဝတ္ထု</small> -->
+                <div class="card p-2 mb-3" style="width: 100%;">
+                    <div class="ratio ratio-16x9">
+                        <!-- https://www.youtube.com/watch?v=cRHHrfP2RHk -->
+                        <iframe width="695" height="391" src="https://www.youtube.com/embed/SBtSv8fFAp0"
+                            title="ဆရာပန်းချီဝင်းတင့်နှင့် စကားပြောခြင်း" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+    
+                    </div>
+    
+                    <div class="py-2">
+                        <a href="" class="text-dark">
+                            <h4 class="">ဆရာပန်းချီဝင်းတင့်နှင့် တွေ့ဆုံခြင်း</h4>
+                        </a>
+                        <p class="mb-1 mt-4">တောင်းတွင်းကြီး
+                            မြို့စာကြည့်တိုက်အတွက်The
+                            Art of forest လို့အမည်ပေးထား......</p>
+                        <small class="text-muted"><i class="fa-regular fa-calendar-days me-2"></i>28 September
+                            2023</small>
+                    </div>
                 </div>
 
-                <div class="py-2">
-                    <a href="" class="text-dark">
-                        <h4>ဆရာပန်းချီဝင်းတင့်နှင့် တွေ့ဆုံခြင်း</h4>
-                    </a>
-                    <p class="mb-1">တောင်းတွင်းကြီး
-                        မြို့စာကြည့်တိုက်အတွက်The
-                        Art of forest လို့အမည်ပေးထား......</p>
-                    <small class="text-muted"><i class="fa-regular fa-calendar-days me-2"></i>28 September
-                        2023</small>
-                </div>
             </div>
 
-            <div class="col-md-6">
-                
-                <div class="ratio ratio-16x9">
-                    <!-- https://www.youtube.com/watch?v=cRHHrfP2RHk -->
-                    <iframe width="695" height="391" src="https://www.youtube.com/embed/SBtSv8fFAp0"
-                        title="ဆရာပန်းချီဝင်းတင့်နှင့် စကားပြောခြင်း" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-
+            <div class="col-md-4  mb-3 ">
+                <!-- <small class="text-dark fw-bold  py-3">ရွှေဝတ္ထု</small> -->
+                <div class="card p-2 mb-3" style="width: 100%;">
+                    <div class="ratio ratio-16x9">
+                        <!-- https://www.youtube.com/watch?v=cRHHrfP2RHk -->
+                        <iframe width="695" height="391" src="https://www.youtube.com/embed/SBtSv8fFAp0"
+                            title="ဆရာပန်းချီဝင်းတင့်နှင့် စကားပြောခြင်း" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+    
+                    </div>
+    
+                    <div class="py-2">
+                        <a href="" class="text-dark">
+                            <h4 class="">ဆရာပန်းချီဝင်းတင့်နှင့် တွေ့ဆုံခြင်း</h4>
+                        </a>
+                        <p class="mb-1 mt-4">တောင်းတွင်းကြီး
+                            မြို့စာကြည့်တိုက်အတွက်The
+                            Art of forest လို့အမည်ပေးထား......</p>
+                        <small class="text-muted"><i class="fa-regular fa-calendar-days me-2"></i>28 September
+                            2023</small>
+                    </div>
                 </div>
 
-                <div class="py-2">
-                    <a href="" class="text-dark">
-                        <h4>ဆရာပန်းချီဝင်းတင့်နှင့် တွေ့ဆုံခြင်း</h4>
-                    </a>
-                    <p class="mb-1">တောင်းတွင်းကြီး
-                        မြို့စာကြည့်တိုက်အတွက်The
-                        Art of forest လို့အမည်ပေးထား......</p>
-                    <small class="text-muted"><i class="fa-regular fa-calendar-days me-2"></i>28 September
-                        2023</small>
+            </div>
+
+            <div class="col-md-4  mb-3 ">
+                <!-- <small class="text-dark fw-bold  py-3">ရွှေဝတ္ထု</small> -->
+                <div class="card p-2 mb-3" style="width: 100%;">
+                    <div class="ratio ratio-16x9">
+                        <!-- https://www.youtube.com/watch?v=cRHHrfP2RHk -->
+                        <iframe width="695" height="391" src="https://www.youtube.com/embed/SBtSv8fFAp0"
+                            title="ဆရာပန်းချီဝင်းတင့်နှင့် စကားပြောခြင်း" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+    
+                    </div>
+    
+                    <div class="py-2">
+                        <a href="" class="text-dark">
+                            <h4 class="">ဆရာပန်းချီဝင်းတင့်နှင့် တွေ့ဆုံခြင်း</h4>
+                        </a>
+                        <p class="mb-1 mt-4">တောင်းတွင်းကြီး
+                            မြို့စာကြည့်တိုက်အတွက်The
+                            Art of forest လို့အမည်ပေးထား......</p>
+                        <small class="text-muted"><i class="fa-regular fa-calendar-days me-2"></i>28 September
+                            2023</small>
+                    </div>
                 </div>
+
             </div>
 
 
-            <div class="col-md-6">
-                
-                <div class="ratio ratio-16x9">
-                    <!-- https://www.youtube.com/watch?v=cRHHrfP2RHk -->
-                    <iframe width="695" height="391" src="https://www.youtube.com/embed/SBtSv8fFAp0"
-                        title="ဆရာပန်းချီဝင်းတင့်နှင့် စကားပြောခြင်း" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-
+            <div class="col-md-4  mb-3 ">
+                <!-- <small class="text-dark fw-bold  py-3">ရွှေဝတ္ထု</small> -->
+                <div class="card p-2 mb-3" style="width: 100%;">
+                    <div class="ratio ratio-16x9">
+                        <!-- https://www.youtube.com/watch?v=cRHHrfP2RHk -->
+                        <iframe width="695" height="391" src="https://www.youtube.com/embed/SBtSv8fFAp0"
+                            title="ဆရာပန်းချီဝင်းတင့်နှင့် စကားပြောခြင်း" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+    
+                    </div>
+    
+                    <div class="py-2">
+                        <a href="" class="text-dark">
+                            <h4 class="">ဆရာပန်းချီဝင်းတင့်နှင့် တွေ့ဆုံခြင်း</h4>
+                        </a>
+                        <p class="mb-1 mt-4">တောင်းတွင်းကြီး
+                            မြို့စာကြည့်တိုက်အတွက်The
+                            Art of forest လို့အမည်ပေးထား......</p>
+                        <small class="text-muted"><i class="fa-regular fa-calendar-days me-2"></i>28 September
+                            2023</small>
+                    </div>
                 </div>
 
-                <div class="py-2">
-                    <a href="" class="text-dark">
-                        <h4>ဆရာပန်းချီဝင်းတင့်နှင့် တွေ့ဆုံခြင်း</h4>
-                    </a>
-                    <p class="mb-1">တောင်းတွင်းကြီး
-                        မြို့စာကြည့်တိုက်အတွက်The
-                        Art of forest လို့အမည်ပေးထား......</p>
-                    <small class="text-muted"><i class="fa-regular fa-calendar-days me-2"></i>28 September
-                        2023</small>
-                </div>
             </div>
-            
-        </div>
 
-        <!-- pagination -->
-        <div class="d-flex mt-5 justify-content-center">
-            <nav aria-label="...">
-                <ul class="pagination">
-                    <li class="page-item disabled">
-                        <a class="page-link">Previous</a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item active" aria-current="page">
-                        <a class="page-link" href="#">2 <span class="visually-hidden">(current)</span></a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="col-md-4  mb-3 ">
+                <!-- <small class="text-dark fw-bold  py-3">ရွှေဝတ္ထု</small> -->
+                <div class="card p-2 mb-3" style="width: 100%;">
+                    <div class="ratio ratio-16x9">
+                        <!-- https://www.youtube.com/watch?v=cRHHrfP2RHk -->
+                        <iframe width="695" height="391" src="https://www.youtube.com/embed/SBtSv8fFAp0"
+                            title="ဆရာပန်းချီဝင်းတင့်နှင့် စကားပြောခြင်း" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+    
+                    </div>
+    
+                    <div class="py-2">
+                        <a href="" class="text-dark">
+                            <h4 class="">ဆရာပန်းချီဝင်းတင့်နှင့် တွေ့ဆုံခြင်း</h4>
+                        </a>
+                        <p class="mb-1 mt-4">တောင်းတွင်းကြီး
+                            မြို့စာကြည့်တိုက်အတွက်The
+                            Art of forest လို့အမည်ပေးထား......</p>
+                        <small class="text-muted"><i class="fa-regular fa-calendar-days me-2"></i>28 September
+                            2023</small>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4  mb-3 ">
+                <!-- <small class="text-dark fw-bold  py-3">ရွှေဝတ္ထု</small> -->
+                <div class="card p-2 mb-3" style="width: 100%;">
+                    <div class="ratio ratio-16x9">
+                        <!-- https://www.youtube.com/watch?v=cRHHrfP2RHk -->
+                        <iframe width="695" height="391" src="https://www.youtube.com/embed/SBtSv8fFAp0"
+                            title="ဆရာပန်းချီဝင်းတင့်နှင့် စကားပြောခြင်း" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+    
+                    </div>
+    
+                    <div class="py-2">
+                        <a href="" class="text-dark">
+                            <h4 class="">ဆရာပန်းချီဝင်းတင့်နှင့် တွေ့ဆုံခြင်း</h4>
+                        </a>
+                        <p class="mb-1 mt-4">တောင်းတွင်းကြီး
+                            မြို့စာကြည့်တိုက်အတွက်The
+                            Art of forest လို့အမည်ပေးထား......</p>
+                        <small class="text-muted"><i class="fa-regular fa-calendar-days me-2"></i>28 September
+                            2023</small>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
+
+
+    <div class="d-flex justify-content-center">
+        <nav class="">
+            <ul class="pagination pagination-circle">
+                <li class="page-item">
+                    <a class="page-link">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="#">2 <span class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+
+
+
 
     <!-- MDB -->
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.umd.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
